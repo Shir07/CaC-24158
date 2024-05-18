@@ -77,3 +77,11 @@ body{
     color: blueviolet;
     transform: scale(1.1);
 }
+
+h2{
+    color: #fff;
+}
+
+p{
+    color: white;
+}
