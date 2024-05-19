@@ -15,10 +15,10 @@
     <!--Encabezado-->
     <header class="header">
         <div class="logo">
-            <a href="/TRISTAN/index.html"> 
-            <img src="/TRISTAN/static/img/logo.png" alt="Logo">
+            <a href="/TRISTAN/index.html">
+                <img src="/TRISTAN/static/img/logo.png" alt="Logo">
 
-        </a>
+            </a>
         </div>
         <nav class="nav-links">
             <ul>
@@ -30,23 +30,80 @@
         </nav>
         <a href="#" class="btn"><button>Noticias</button></a>
 
-        
+
     </header>
 
     <!--Contenido-->
     <main>
 
         <!--Banner Tristan-->
-    <section id="banner-tristan">
-        <div></div>
+        <section id="banner-tristan">
+            <div></div>
+
+        </section>
+
+        <!--Formulario Novedades-->
+        <section id="from-wrapper">
+            <h2>Recibí las noticias sobre Tristan Cooke</h2>
+            <p>¡Si te interesa recibir las últimas noticias sobre Tristan Cooke suscribite a nuestro newsletter!
+                Completa el siguiente formulario y nos comunicaremos con vos.</p>
+
+            <form action="#" method="get" id="formRegister">
+
+                <!--Nombre-->
+                <div class="form-control">
+                    <label for="">Nombre</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+
+                <!--Email-->
+                <div class="form-control">
+                    <label for="">Email</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="error" id="error-email"></div>
+
+                <!--País-->
+                <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="BO">Bolivia</option>
+                    </select>
+                </div>
+                <div class="error" id="error-country"></div>
+
+                <!--Periocidad-->
+                <div class="form-control">
+                    <label for="">Periocidad</label>
+                    <input type="text" name="periocidad" id="periocidad" required>
+                </div>
+                <div class="error" id="error-peri"></div>
+
+                <!--Mensaje-->
+                <div class="form-control">
+                    <label for="">Mensaje</label>
+                    <input type="text" name="mensaje" id="mensaje" required>
+                    <textarea id="area" placeholder="Puede dejar aquí un mensaje"></textarea>
+                    <div class="error" id="error-msg"></div>
+
+                    <div class="form-terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="">Acepto términos y condiciones.</label>
+                    </div>
+                    <!--Boton registro-->
+                    <button type="submit">Enviar</button> </form>
 
 
-    </section>
-    <section></section>
-    <section></section>
-    <section></section>
+        </section>
 
-</main>
+
+        <section></section>
+        <section></section>
+
+    </main>
 
     <!--Pie-->
     <footer></footer>
