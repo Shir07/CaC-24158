@@ -4,109 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/TRISTAN/static/css/style.css">
+    <link rel="stylesheet" href="/TRISTAN/static/css/formulario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Crazy Wisdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a8feec2130.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="../static/img/favicon.ico">
+    <title>Formulario</title>
 </head>
 
 <body>
-    <!--Encabezado-->
-    <header class="header">
-        <div class="logo">
-            <a href="/TRISTAN/index.html">
-                <img src="/TRISTAN/static/img/logo.png" alt="Logo">
 
-            </a>
-        </div>
-        <nav class="nav-links">
-            <ul>
-                <li> <a href="#">Tristan Cooke</a></li>
-                <li> <a href="#">Discografía</a></li>
-                <li> <a href="#">Killerwatts</a></li>
-                <li> <a href="#">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn"><button>Noticias</button></a>
+ <!--Encabezado-->
+ <header class="header">
+    <div class="logo">
+        <a href="/TRISTAN/index.html"> 
+        <img src="/TRISTAN/static/img/logo.png" alt="Logo">
 
+    </a>
+    </div>
+    
 
-    </header>
+</header>
 
-    <!--Contenido-->
     <main>
 
-        <!--Banner Tristan-->
-        <section id="banner-tristan">
-            <div></div>
 
-        </section>
 
-        <!--Formulario Novedades-->
-        <section id="from-wrapper">
-            <h2>Recibí las noticias sobre Tristan Cooke</h2>
-            <p>¡Si te interesa recibir las últimas noticias sobre Tristan Cooke suscribite a nuestro newsletter!
-                Completa el siguiente formulario y nos comunicaremos con vos.</p>
+<section class="formulario-tristan">
+    
+        <h2>Suscribite a nuestro Newsteller</h2>
+        <!--Formulario-->
+        <form action="" class="formulario" id="formulario">
 
-            <form action="#" method="get" id="formRegister">
-
-                <!--Nombre-->
-                <div class="form-control">
-                    <label for="">Nombre</label>
-                    <input type="text" name="firstname" id="firstname" required>
+            <!--Grupo: Nombre-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombres*</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Escriba su nombre y apellido" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
-                <div class="error" id="error-firstname"></div>
+                <p class="formulario__input-error">Nombre invalido! No se pueden colocar números :c</p>
 
-                <!--Email-->
-                <div class="form-control">
-                    <label for="">Email</label>
-                    <input type="text" name="email" id="email" required>
+            </div>
+
+
+            <!--Grupo: email-->
+            <div class="formulario__grupo" id="grupo__email" >
+                <label for="email" class="formulario__label">Email*</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="email" id="nombre"
+                        placeholder="Escriba su correo electrónico" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
-                <div class="error" id="error-email"></div>
+                <p class="formulario__input-error">Correo invalido</p>
 
-                <!--País-->
-                <div class="form-control">
-                    <select name="country" id="country" class="form-select">
-                        <option value="">País</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BR">Brasil</option>
-                        <option value="BO">Bolivia</option>
+            </div>
+
+
+            <!--Grupo: pais-->
+            <div class="formulario__grupo" id="grupo__country">
+                <label for="country" class="formulario__label">País*</label>
+                <div class="formulario__grupo-input">
+                    <select class="formulario__input" name="country" id="country" required>
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="otros">Otros</option>
                     </select>
                 </div>
-                <div class="error" id="error-country"></div>
+            </div>
 
-                <!--Periocidad-->
-                <div class="form-control">
-                    <label for="">Periocidad</label>
-                    <input type="text" name="periocidad" id="periocidad" required>
+
+            <!--Grupo: edad-->
+            <div class="formulario__grupo" id="grupo__edad">
+                <label for="edad" class="formulario__label">Edad*</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="edad" id="edad" min="18" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
-                <div class="error" id="error-peri"></div>
+                <p class="formulario__input-error">Edad invalida!</p>
 
-                <!--Mensaje-->
-                <div class="form-control">
-                    <label for="">Mensaje</label>
-                    <input type="text" name="mensaje" id="mensaje" required>
-                    <textarea id="area" placeholder="Puede dejar aquí un mensaje"></textarea>
-                    <div class="error" id="error-msg"></div>
+            </div>
 
-                    <div class="form-terms">
-                        <input type="checkbox" id="terms" required>
-                        <label for="">Acepto términos y condiciones.</label>
-                    </div>
-                    <!--Boton registro-->
-                    <button type="submit">Enviar</button> </form>
+            <!--Grupo: mensaje-->
+            <div class="formulario__grupo" id="grupo__mensaje">
+                <label for="mensaje" class="formulario__label">Mensaje*</label>
+                <div class="formulario__grupo-input">
+                    <textarea type="text" class="formulario__input" name="mensaje" id="mensaje"
+                        placeholder="Escriba un mensaje" rows="4" cols="40"></textarea>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
 
 
-        </section>
+            <!--Grupo: Terminos-->
+
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label for="formulario__label">
+                    <input class="formulario__cheackbox" type="checkbox" name="terminos" id="terminos"> Acepto términos
+                    y
+                    condiciones
+                </label>
+            </div>
+            <!--error terminos-->
+            <div class="formulario__mensaje-error" id="formulario__mensaje-error">
+                <p> <b> Error: </b>Por favor, completar los campos requeridos</p>
+
+            </div>
+
+            <!--Grupo: boton formulario-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Suscribirse</button>
+                <p class="class formulario__mensaje-exito" id="formulario__mensaje-exito">¡Suscripción Exitosa!</p>
+            </div>
 
 
-        <section></section>
-        <section></section>
+        
+        </form>
+
+    </section>
+  
 
     </main>
 
-    <!--Pie-->
-    <footer></footer>
+
+    <script src="/TRISTAN/static/js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/a8feec2130.js" crossorigin="anonymous"></script>
+    
+    
+    <footer>
+        <div>
+            <p>© 2024 - Trabajo Práctico Codo a Codo - Ohannecian Priscila Shirley</p>
+        </div>
+    </footer>
 
 </body>
 

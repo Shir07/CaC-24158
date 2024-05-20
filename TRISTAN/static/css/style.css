@@ -67,11 +67,11 @@ body {
     border-radius: 25px;
 }*/
 
-
+/*header y nav*/
 .header {
     background-color: black;
     color: #fff;
-    position: fixed;
+    
     top: 0px;
     left: 0px;
     width: 100%;
@@ -180,4 +180,10 @@ h3 {
 
 .scrolled {
     background-color: var(--third-color);
+}
+
+#formRegister{
+display: grid;
+color: #F39C12;
+
 }
