@@ -4,66 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Wisdom</title>
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/a8feec2130.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="icon" href="./static/img/favicon.ico">
-    <title>Crazy Wisdom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!--Encabezado-->
-    <header class="header">
-        <div class="logo">
-            <img src="./static/img/logo.png" alt="Logo">
+
+
+    <header>
+        <div class="container">
+            <p class="logo">Crazy Wisdom</p>
+
+            <nav>
+                <a href="#biografia">Tristan Cooke</a>
+                <a href="discografia">Discografía</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#noticias">Noticias</a>
+            </nav>
         </div>
-        <nav class="nav-links">
-            <ul>
-                <li> <a href="./templates/tristan.html">Tristan Cooke</a></li>
-                <li> <a href="./templates/discografia.html">Discografía</a></li>
-                <li> <a href="./templates/killerwatts.html">Killerwatts</a></li>
-                <li> <a href="./templates/about.html">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-
-        <a href="./templates/register.html" class="btn"><button>Noticias</button></a>
-
-
     </header>
 
-    <!--Contenido-->
-    <main>
-        <section id="banner">
+    <section id="hero">
+        <h1>Tristan Cooke</h1>
+        <button>Let's turn on</button>
+    </section>
 
-            <img src="./static/img/tristan-meisterjahn.jpg" alt="Tristan-Banner" width="100%">
-            <div class="conteiner card-banner">
-                <h2>Can you see the colors?</h2>
-                <a class="button-btn" href="./templates/tristan.html" id="tristan-btn">Quién es Tristan Cooke?</a>
+    <section id="biografia">
+        <div class="container">
+
+            <div class="img-container"></div>
+            <div class="text">
+            <h2> <span class="color-acento">Tristan</span> Cooke</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis assumenda. Cumque assumenda
+                magnam qui accusantium quod veniam ipsa impedit, doloremque id possimus, est ducimus, fugit consequuntur
+                sit cum ad.</p>
+            
             </div>
-        </section>
+        </div>
+        
+        
+    </section>
 
-        <section id="novedades" class="container">
+    <section id="discografia">
 
-            <h3>Suscribete</h3>
-            <a href="./templates/register.html">NOTICIAS</a>
+        <div class="container">
+            <h2>Discografía</h2>
 
-        </section>
+            <div class="discografia-card">
 
-    </main>
+                <div class="card">
+                    <h3>Albums</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem impedit nesciunt voluptatibus
+                        sapiente neque doloremque repudiandae excepturi laborum mollitia inventore sed ab asperiores
+                        ducimus, molestiae eum veritatis rerum sint veniam!</p>
+                    <button>+ Info</button>
+
+                </div>
+
+                <div class="card">
+                    <h3>Singles</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem impedit nesciunt voluptatibus
+                        sapiente neque doloremque repudiandae excepturi laborum mollitia inventore sed ab asperiores
+                        ducimus, molestiae eum veritatis rerum sint veniam!</p>
+                    <button>+ Info</button>
+
+                </div>
+
+                <div class="card">
+                    <h3>Killerwatts</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem impedit nesciunt voluptatibus
+                        sapiente neque doloremque repudiandae excepturi laborum mollitia inventore sed ab asperiores
+                        ducimus, molestiae eum veritatis rerum sint veniam!</p>
+                    <button>+ Info</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid laudantium fugiat voluptas est
+                neque ab harum praesentium cupiditate placeat hic eos, repellat consequatur velit ex molestias explicabo
+                laboriosam quibusdam?</p>
+        </div>
+    </section>
 
 
-    <!--Pie-->
+    <section id="noticias">
+        <div class="container">
+            <h2>Suscribite a nuestro Newsletter</h2>
+            <a href="../TRISTAN/templates/register.html">
+            <button>SUSCRIBIRSE</button>
+        </a>
+        </div>
+    </section>
+
     <footer>
-        <div>
-            <p>© 2024 - Trabajo Práctico Codo a Codo - Ohannecian Priscila Shirley</p>
+        <div class="container">
+            <p>&copy;2024 - Trabajo práctico Codo a Codo - Ohannecian Priscila Shirley</p>
         </div>
     </footer>
-</body>
 
+</body>
 
 </html>
