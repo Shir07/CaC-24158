@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a8feec2130.js" crossorigin="anonymous"></script>
+<script src="./static/js/main.js"></script>
 </head>
 
 <body>
@@ -19,18 +20,20 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="/index.html"> 
-                <img src="/static/img/logo.png" alt="Logo">
-        
-            </a>
+                <a href="/index.html">
+                    <img src="/static/img/logo.png" alt="Logo">
+                </a>
             </div>
             <!--<p class="logo">Crazy Wisdom</p>-->
-            <button class="boton-nav">Abrir</button>
-            <nav>
-                     <a href="#biografia">Tristan Cooke</a>
-                    <a href="#discografia">Discografía</a>
-                    <a href="#sobre-nosotros">Sobre Nosotros</a>
-                     <a href="#noticias">Noticias</a>
+            <button id="abrir" class="boton-nav">Abrir</button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-nav" id="cerrar">Cerrar</button>
+                <div class="nav-list">
+                <a href="#biografia">Tristan Cooke</a>
+                <a href="#discografia">Discografía</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#noticias">Noticias</a>
+            </div>
             </nav>
         </div>
     </header>
@@ -57,7 +60,7 @@
                     fan base.
 
                 </p>
-            
+
 
             </div>
         </div>
