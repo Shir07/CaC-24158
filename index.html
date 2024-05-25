@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8feec2130.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,19 +18,28 @@
 
     <header>
         <div class="container">
-            <p class="logo">Crazy Wisdom</p>
-
+            <div class="logo">
+                <a href="/index.html"> 
+                <img src="/static/img/logo.png" alt="Logo">
+        
+            </a>
+            </div>
+            <!--<p class="logo">Crazy Wisdom</p>-->
+            <button class="boton-nav">Abrir</button>
             <nav>
-                <a href="#biografia">Tristan Cooke</a>
-                <a href="#discografia">Discografía</a>
-                <a href="#sobre-nosotros">Sobre Nosotros</a>
-                <a href="#noticias">Noticias</a>
+                     <a href="#biografia">Tristan Cooke</a>
+                    <a href="#discografia">Discografía</a>
+                    <a href="#sobre-nosotros">Sobre Nosotros</a>
+                     <a href="#noticias">Noticias</a>
             </nav>
         </div>
     </header>
 
+    <!-- biografia-->
+
+
     <section id="hero">
-        <h1>Tristan Cooke</h1>
+        <h1>Tristan</h1>
         <button>Let's turn on!</button>
     </section>
 
@@ -38,15 +48,23 @@
 
             <div class="img-container"></div>
             <div class="text">
-            <h2> <span class="color-acento">Tristan</span> Cooke</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis assumenda. Cumque assumenda
-                magnam qui accusantium quod veniam ipsa impedit, doloremque id possimus, est ducimus, fugit consequuntur
-                sit cum ad.</p>
+                <h2> <span class="color-acento">Tristan</span> Cooke</h2>
+                <p>A true pioneer, with an unflinching love for Psytrance, Tristan is constantly placing himself at the
+                    very cutting edge, always pushing the envelope and creating a massive wake of psychedelic
+                    inspiration around him as he forges new sounds and techniques. His infinite energy and enthusiasm
+                    for psychedelic music, the way of life that intertwines with it, and his larger than life stage
+                    presence, has rightfully earned Tristan legendary status amongst a very dedicated and adoring global
+                    fan base.
+
+                </p>
             
+
             </div>
         </div>
-        
-        
+
+        </div>
+
+
     </section>
 
     <section id="discografia">
@@ -88,21 +106,28 @@
 
     <section id="sobre-nosotros">
         <div class="container">
-            
             <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid laudantium fugiat voluptas est
-                neque ab harum praesentium cupiditate placeat hic eos, repellat consequatur velit ex molestias explicabo
-                laboriosam quibusdam?</p>
+            <div class="img-about">
+                <iframe width="400" height="350" src="https://www.youtube.com/embed/pE4KA4K9JWU"
+                    title="Tristan Live at Groove Palermo [Buenos Aires]" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="text-about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid laudantium fugiat voluptas est
+                    neque ab harum praesentium cupiditate placeat hic eos, repellat consequatur velit ex molestias
+                    explicabo
+                    laboriosam quibusdam?</p>
+            </div>
         </div>
     </section>
-
 
     <section id="noticias">
         <div class="container">
             <h2>Suscribite a nuestro Newsletter</h2>
-            <a href="../TRISTAN/templates/register.html">
-            <button>SUSCRIBIRSE</button>
-        </a>
+            <a href="./templates/register.html">
+                <button>SUSCRIBIRSE</button>
+            </a>
         </div>
     </section>
 

@@ -34,7 +34,7 @@ body {
 
 /*Estilo letras, parrafos y listas*/
 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h3 {
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 ul {
@@ -87,8 +87,12 @@ button:hover {
 /*header y nav*/
 header {
     background-color: #000000;
+   
 
 }
+
+
+
 
 header .logo {
     margin: 0;
@@ -124,7 +128,36 @@ header a:hover {
     color: #FF0FEB;
 }
 
-/*inicio*/
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+.logo img:hover {
+    transform: scale(1.4);
+}
+
+header .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    background-color: #F39C12;
+
+}
+
+.boton-nav {
+    background-color: #00FFDB;
+    
+}
+
+/*hero*/
+
 #hero {
     display: flex;
     align-items: center;
@@ -134,14 +167,14 @@ header a:hover {
     height: 90vh;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/TRISTAN/static/img/tristan-meisterjahn.jpg);
+            rgba(0, 0, 0, 0.5)), url(/static/img/tristan-meisterjahn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #hero h1 {
-    color: #e9e9e9;
+    color: #ffffff;
 }
 
 #hero button {
@@ -158,8 +191,40 @@ header a:hover {
 #biografia .container {
     text-align: center;
     padding: 200px 12px;
-    height: 85vh;
+    height: 80vh;
 }
+
+/*
+
+#biografia .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#biografia .social-links .fa-brands {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    width: 20px 10px;
+    font-size: 3vh;
+    background-color: #00FFDB;
+}
+
+#biografia .social-links a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    width: 300px;
+
+}
+*/
+
+
 
 /*seccion discografia*/
 
@@ -201,21 +266,21 @@ header a:hover {
 .card:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/TRISTAN/static/img/tristan-lixpix.jpg);
+            rgba(0, 0, 0, 0.5)), url(/static/img/tristan-lixpix.jpg);
 
 }
 
 .card:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/TRISTAN/static/img/banner.jpg);
+            rgba(0, 0, 0, 0.5)), url(/static/img/banner.jpg);
 
 }
 
 .card:last-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/TRISTAN/static/img/trsitanindia2017.jpg);
+            rgba(0, 0, 0, 0.5)), url(/static/img/trsitanindia2017.jpg);
 
 }
 
@@ -233,21 +298,16 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 70vh;
-
     color: white;
     background-color: #000000;
 
 }
 
 #sobre-nosotros h2 {
-    padding: 10px;
+    padding: 5px;
 }
 
-/*
-#sobre-nosotros li{
-    align-items: center;
-    font-weight: bold;
-}*/
+
 
 /* Noticias*/
 
@@ -293,6 +353,7 @@ footer .container {
     height: 150px;
 }
 
+
 @media (min-width:720px) {
 
     header {
@@ -333,13 +394,15 @@ footer .container {
     }
 
     #biografia .img-container {
-        background-image: url("/TRISTAN/static/img/tristan-bio.jpg");
+        background-image: url("/static/img/tristan-bio.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 500px;
 
     }
+
+
 
     #discografia .discografia-card {
         display: flex;
@@ -361,37 +424,59 @@ footer .container {
 
 
     }
-/*imagen no funciona
-    #sobre-nosotros {
-        background-image: url("/TRISTAN/static/img/tristan-rajaram.jpg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
+
+    /*sobre nosotros*/
+    #sobre-nosotros .container {
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        
+
+   
+        
+    }
+
+    #sobre-nosotros .img-about {
+        /*background-image: url("/static/img/killerwatts-origin.jpg");*/
+        background-size: cover;
+        background-position: center center;
+       
 
     }
 
-    #sobre-nosotros .container {
-        text-align: initial;
+    #sobre-nosotros .text-about {
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
         
-    } */
+        padding-bottom: 100px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    #noticias h2{
+    }
+
+
+    #noticias h2 {
         font-size: 3em;
     }
 
-    #noticias button{
+    #noticias button {
         font-size: 2em;
     }
 
-    footer .container{
+    footer .container {
         justify-content: flex-end;
 
     }
 
+
 }
 
-@media (min-width:1200px) {
-    #sobre-nosotros {
-        background-position-x: calc(100vw - 800px);
+@media(max-width:600px){
+    #sobre-nosotros .img-about{
     }
+
 }
+
